@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Mars Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+            <h1 id="title" class="text-center">Bruno Mars Survey Form</h1>
+            <p id="description">Please fill the form, thank you</p>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <br>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required="">
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <br>
+                <input type="text" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label>
+                <br>
+                <input type="text" id="number" placeholder="Age" min="10" max="99">
+            </div>
+            <div class="form-group">
+                How do you know Bruno Mars?
+                <br>
+                <select id="dropdown" class="form-control" required="">
+                    <option>Youtube</option>
+                    <option>Social Media</option>
+                    <option>Friend</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label id="album-label" for="album">Which album is the best?</label>
+                <br>
+                <input type="radio" name="album" value="1" checked="">
+                Doo-Wops & Holigans (2010)
+                <br>
+                <input type="radio" name="album" value="2" checked="">
+                Unorthodox Jukebox (2012)
+                <br>
+                <input type="radio" name="album" value="3" checked="">
+                24K Magic (2016)
+                <br>
+                <input type="radio" name="album" value="4" checked="">
+                An Evening With Silk (2021)
+                <br>
+            </div>
+            <div class="form-group">
+                <label id="comment-label" for="comments">Any comments or sugestions?
+                <br>
+                <textarea id="comments" cols="30" rows="10"></textarea></label>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+</body>
+</html>
